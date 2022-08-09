@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  layout2
+//  ViewCodeExample
 //
 //  Created by Wender on 08/08/22.
 //
