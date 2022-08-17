@@ -7,23 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A65DF7028A2AA1C00DECC18 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65DF6F28A2AA1C00DECC18 /* TasksView.swift */; };
+		2A65DF7228A2AA3800DECC18 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65DF7128A2AA3800DECC18 /* TasksViewController.swift */; };
+		2A65DF7428A2AA4A00DECC18 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65DF7328A2AA4A00DECC18 /* TasksViewModel.swift */; };
+		2A65DF7828A2AE4E00DECC18 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65DF7728A2AE4E00DECC18 /* TaskModel.swift */; };
 		2AA4E04828A1DA2C00360428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4E04728A1DA2C00360428 /* AppDelegate.swift */; };
 		2AA4E04A28A1DA2C00360428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4E04928A1DA2C00360428 /* SceneDelegate.swift */; };
-		2AA4E04C28A1DA2C00360428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4E04B28A1DA2C00360428 /* ViewController.swift */; };
+		2AA4E04C28A1DA2C00360428 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4E04B28A1DA2C00360428 /* HomeViewController.swift */; };
 		2AA4E05128A1DA2C00360428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4E05028A1DA2C00360428 /* Assets.xcassets */; };
 		2AA4E05428A1DA2C00360428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4E05228A1DA2C00360428 /* LaunchScreen.storyboard */; };
 		2AA4E05E28A1DEEF00360428 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4E05D28A1DEEF00360428 /* HomeView.swift */; };
+		2AD39A3C28A5B3900080C332 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD39A3B28A5B3900080C332 /* Observable.swift */; };
+		2AD39A4028A5B68E0080C332 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD39A3F28A5B68E0080C332 /* NetworkService.swift */; };
+		2AD39A4428AC8D550080C332 /* UIViewCanvas in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD39A4328AC8D550080C332 /* UIViewCanvas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A65DF6F28A2AA1C00DECC18 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		2A65DF7128A2AA3800DECC18 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		2A65DF7328A2AA4A00DECC18 /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
+		2A65DF7728A2AE4E00DECC18 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		2AA4E04428A1DA2C00360428 /* ViewCodeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewCodeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA4E04728A1DA2C00360428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AA4E04928A1DA2C00360428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2AA4E04B28A1DA2C00360428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AA4E04B28A1DA2C00360428 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2AA4E05028A1DA2C00360428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AA4E05328A1DA2C00360428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AA4E05528A1DA2C00360428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AA4E05D28A1DEEF00360428 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2AD39A3B28A5B3900080C332 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		2AD39A3F28A5B68E0080C332 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +44,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD39A4428AC8D550080C332 /* UIViewCanvas in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A65DF6E28A2AA0A00DECC18 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				2A65DF6F28A2AA1C00DECC18 /* TasksView.swift */,
+				2A65DF7128A2AA3800DECC18 /* TasksViewController.swift */,
+				2A65DF7328A2AA4A00DECC18 /* TasksViewModel.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		2A65DF7528A2AE2D00DECC18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A65DF7628A2AE3D00DECC18 /* Task */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A65DF7628A2AE3D00DECC18 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				2A65DF7728A2AE4E00DECC18 /* TaskModel.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
 		2AA4E03B28A1DA2C00360428 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +96,12 @@
 		2AA4E04628A1DA2C00360428 /* ViewCodeExample */ = {
 			isa = PBXGroup;
 			children = (
+				2AD39A4128A5B6970080C332 /* Services */,
+				2AD39A3D28A5B5E40080C332 /* Helpers */,
+				2A65DF7528A2AE2D00DECC18 /* Models */,
 				2AA4E05B28A1DEAF00360428 /* Views */,
 				2AA4E04728A1DA2C00360428 /* AppDelegate.swift */,
 				2AA4E04928A1DA2C00360428 /* SceneDelegate.swift */,
-				2AA4E04B28A1DA2C00360428 /* ViewController.swift */,
 				2AA4E05028A1DA2C00360428 /* Assets.xcassets */,
 				2AA4E05228A1DA2C00360428 /* LaunchScreen.storyboard */,
 				2AA4E05528A1DA2C00360428 /* Info.plist */,
@@ -70,6 +112,7 @@
 		2AA4E05B28A1DEAF00360428 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2A65DF6E28A2AA0A00DECC18 /* Tasks */,
 				2AA4E05C28A1DEBC00360428 /* Home */,
 			);
 			path = Views;
@@ -79,8 +122,33 @@
 			isa = PBXGroup;
 			children = (
 				2AA4E05D28A1DEEF00360428 /* HomeView.swift */,
+				2AA4E04B28A1DA2C00360428 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2AD39A3D28A5B5E40080C332 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2AD39A3B28A5B3900080C332 /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2AD39A3E28A5B6770080C332 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2AD39A3F28A5B68E0080C332 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2AD39A4128A5B6970080C332 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2AD39A3E28A5B6770080C332 /* Network */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +167,9 @@
 			dependencies = (
 			);
 			name = ViewCodeExample;
+			packageProductDependencies = (
+				2AD39A4328AC8D550080C332 /* UIViewCanvas */,
+			);
 			productName = ViewCodeExample;
 			productReference = 2AA4E04428A1DA2C00360428 /* ViewCodeExample.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 2AA4E03B28A1DA2C00360428;
+			packageReferences = (
+				2AD39A4228AC8D550080C332 /* XCRemoteSwiftPackageReference "UIViewCanvas" */,
+			);
 			productRefGroup = 2AA4E04528A1DA2C00360428 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,10 +227,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AA4E04C28A1DA2C00360428 /* ViewController.swift in Sources */,
+				2AD39A4028A5B68E0080C332 /* NetworkService.swift in Sources */,
+				2AA4E04C28A1DA2C00360428 /* HomeViewController.swift in Sources */,
 				2AA4E05E28A1DEEF00360428 /* HomeView.swift in Sources */,
+				2A65DF7428A2AA4A00DECC18 /* TasksViewModel.swift in Sources */,
 				2AA4E04828A1DA2C00360428 /* AppDelegate.swift in Sources */,
+				2AD39A3C28A5B3900080C332 /* Observable.swift in Sources */,
 				2AA4E04A28A1DA2C00360428 /* SceneDelegate.swift in Sources */,
+				2A65DF7028A2AA1C00DECC18 /* TasksView.swift in Sources */,
+				2A65DF7828A2AE4E00DECC18 /* TaskModel.swift in Sources */,
+				2A65DF7228A2AA3800DECC18 /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AD39A4228AC8D550080C332 /* XCRemoteSwiftPackageReference "UIViewCanvas" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/outrowender/UIViewCanvas";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AD39A4328AC8D550080C332 /* UIViewCanvas */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AD39A4228AC8D550080C332 /* XCRemoteSwiftPackageReference "UIViewCanvas" */;
+			productName = UIViewCanvas;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2AA4E03C28A1DA2C00360428 /* Project object */;
 }

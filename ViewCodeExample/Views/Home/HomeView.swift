@@ -7,16 +7,34 @@
 
 import UIKit
 
+// MARK: Delegate
+protocol HomeViewDelegate: AnyObject {
+    func navigateButtonPressed()
+}
+
+// MARK: View
 class HomeView: UIView {
+    
+    private var delegate: HomeViewDelegate?
 
     lazy var helloLabel: UILabel = {
         let label = UILabel()
-        label.text = "Hello world!"
+        label.text = "Use this great app to manage your tasks."
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    override init(frame: CGRect) {
+    lazy var taskButton: UIButton = {
+        var config = UIButton.Configuration.filled()
+        config.title = "Let's GO!"
+        let button = UIButton(configuration: config)
+        button.addTarget(self, action: #selector(taskButtonPressed), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    init(frame: CGRect, delegate: HomeViewDelegate? = nil) {
+        self.delegate = delegate
         super.init(frame: frame)
         
         setupSuperView()
@@ -33,14 +51,34 @@ class HomeView: UIView {
     }
     
     func setupHierarchy(){
-        self.addSubview(helloLabel)
+        addSubview(helloLabel)
+        addSubview(taskButton)
     }
     
     func setupConstraints(){
         NSLayoutConstraint.activate([
-            helloLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            helloLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+            helloLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            helloLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            
+            taskButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            taskButton.topAnchor.constraint(equalTo: helloLabel.bottomAnchor, constant: 8)
         ])
     }
 
+}
+
+// MARK: View actions
+extension HomeView {
+    @objc func taskButtonPressed(){
+        delegate?.navigateButtonPressed()
+    }
+}
+
+import SwiftUI
+import UIViewCanvas
+
+struct HomeViewPreview: PreviewProvider {
+    static var previews: some View {
+        ViewCanvas(for: HomeView(frame: .zero))
+    }
 }
