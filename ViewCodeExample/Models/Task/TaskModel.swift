@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct TaskModel {
+    let title: String
+    let subtitle: String
+    let priority: Int
+}

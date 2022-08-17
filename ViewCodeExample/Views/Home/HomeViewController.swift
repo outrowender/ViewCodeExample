@@ -9,10 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    override func loadView() {
+        setupSuperView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupSuperView()
     }
     
     func setupSuperView(){

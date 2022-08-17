@@ -14,7 +14,6 @@ protocol HomeViewDelegate: AnyObject {
 
 // MARK: View
 class HomeView: UIView {
-    
     private var delegate: HomeViewDelegate?
 
     lazy var helloLabel: UILabel = {

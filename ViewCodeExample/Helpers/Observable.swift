@@ -20,9 +20,17 @@ class Observable<T> {
         self.value = value
     }
     
+    func update(_ value: T) {
+        self.value = value
+    }
+    
     /// You can subscribe to get new values for this object
     func subscribe(_ listener: @escaping(T) -> Void) {
         listener(value)
         self.listener = listener
+    }
+    
+    func unsubscribe(){
+        self.listener = nil
     }
 }

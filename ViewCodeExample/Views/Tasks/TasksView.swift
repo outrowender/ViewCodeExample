@@ -7,16 +7,24 @@
 
 import UIKit
 
-class TasksView: UIView {
+protocol TasksViewDelegate {
+    func taskTapped()
+}
 
-    lazy var helloLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Hello Tasks!"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+class TasksView: UIView {
+    private var delegate: TasksViewDelegate?
+    private var taskList: [TaskModel] = []
+    
+    lazy var tableView: UITableView = {
+        let view = UITableView(frame: .zero)
+        view.delegate = self
+        view.dataSource = self
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, delegate: TasksViewDelegate? = nil) {
+        self.delegate = delegate
         super.init(frame: frame)
         
         setupSuperView()
@@ -24,25 +32,45 @@ class TasksView: UIView {
         setupConstraints()
     }
     
+    func updateList(_ list: [TaskModel]){
+        taskList = list
+        tableView.reloadData()
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupSuperView(){
+    // TODO: create a protocol for this
+    private func setupSuperView(){
         self.backgroundColor = .systemBackground
     }
     
-    func setupHierarchy(){
-        self.addSubview(helloLabel)
+    private func setupHierarchy(){
+        self.addSubview(tableView)
     }
     
-    func setupConstraints(){
+    private func setupConstraints(){
         NSLayoutConstraint.activate([
-            helloLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            helloLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            tableView.topAnchor.constraint(equalTo: topAnchor),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
+}
 
+extension TasksView: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return taskList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell_\(taskList[indexPath.row].title)_\(taskList[indexPath.row].subtitle)")
+        cell.textLabel?.text = taskList[indexPath.row].title
+        cell.detailTextLabel?.text = taskList[indexPath.row].subtitle
+        return cell
+    }
 }
 
 import SwiftUI
