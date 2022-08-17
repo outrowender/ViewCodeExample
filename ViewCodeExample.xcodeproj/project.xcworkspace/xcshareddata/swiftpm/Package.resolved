@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "uiviewcanvas",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/outrowender/UIViewCanvas",
+      "state" : {
+        "revision" : "212e9fceb25aa6ee07872462968022180db95cce",
+        "version" : "0.0.8"
+      }
+    }
+  ],
+  "version" : 2
+}
